@@ -1,0 +1,52 @@
+/*CSS styling admin page*/
+a, input, td, th {
+    font-family: Calibri, Arial, SansSerif;
+}
+.container {
+    width: 100%;
+}
+
+.table-name {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 33px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.session {
+    float: right;
+}
+
+.appointments {
+    height: 100%;
+    width: 696px;
+    margin: 0 auto;
+    border:  2px solid #537e7a;
+
+}
+
+th {
+    text-align: left;
+    min-width: 130px;
+    color: black;
+}
+
+td {
+    width: 600px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #cef2ef;
+}
+
+#logout {
+    float: right;
+}
+.back {
+    width: 700px;
+    margin: 0 auto;
+}
+.back > a {
+    float: right;
+}

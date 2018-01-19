@@ -1,0 +1,95 @@
+/*CSS styling reserverings formulier*/
+.container-title {
+    width: 500px;
+    margin: 25px auto 0 auto;
+    text-align: center;
+}
+.container {
+    margin: 25px auto 0 auto;
+    width: 355px;
+    height: 455px;
+    border: 2px solid #537e7a;
+}
+.container-footer {
+    width: 350px;
+    margin: 80px auto 0 auto;
+}
+.subject-header {
+    margin: 15px 0 15px 0;
+}
+.appointment, .contact {
+    width: 335px;
+}
+.contact {
+    margin: 30px 0 15px 0;
+}
+.title-appointment {
+    padding: 18px 267.9px 5px 0;
+    border-bottom: 1px solid #537e7a;
+}
+.title-contact {
+    padding: 0 274.22px 5px 0;
+    border-bottom: 1px solid #537e7a;
+}
+input.datepicker, input#comment,
+input#first, input#last,
+input#companyname, input#email,
+input#phone {
+    height: 20px;
+    float: right;
+    width: 229px;
+}
+.data-field {
+    height: 24px;
+    margin: 8px 0;
+}
+.appointment, .contact {
+
+    margin-left: 9px;
+}
+select {
+    width: 233px;
+    height: 24px;
+    float: right;
+}
+span.errors, span.errors-two{
+    margin-top: 9px;
+    float: right;
+    color: #ec5e57;
+}
+.submit {
+    width: 100px;
+    margin: 7.5px 0 15px 10px;
+    float: right;
+}
+.submit, span.errors {
+    display:inline-block;
+}
+input.submit, span.errors-two {
+    display:inline-block;
+}
+.appointment > label {
+    height: 17px;
+}
+.off-form-information {
+    width: 360px;
+}
+.info-left {
+    width: 202.5px;
+}
+.info-right {
+    width: 155px;
+    float: right;
+}
+.info-left, .info-right {
+    display: inline-block;
+}
+p, a, h2, .title-appointment, label, select, input, .title-contact, h4, span.errors-two, span.error {
+    font-family: Calibri, Arial, SansSerif;
+}
+h4 {
+    margin-bottom: 0;
+}
+.off-form-information p {
+    margin-top: 2px;
+}

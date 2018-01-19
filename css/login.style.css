@@ -1,0 +1,42 @@
+/*CSS styling log in formulier*/
+
+input{
+    width: 296px;
+    height: 30px;
+    font-family: Calibri, Arial, SansSerif;
+}
+.data-field > input {
+    text-align: center;
+}
+.data-field {
+    margin: 10px auto;
+}
+.data-submit > input {
+    width: 300px;
+    margin: 0 auto;
+}
+.login-wrapper {
+    margin: 0 auto;
+    width: 300px;
+}
+.login-frame {
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    border: 3px solid #537e7a;
+    margin-top: 60px;
+}
+span {
+    text-align: center;
+}
+.sub-logo > img {
+    width: 300px;
+    height: 33px;
+    margin: 40px 50px 25px 50px;
+}
+.login-wrapper > a {
+    margin: 20px 95.125px 0 0;
+    float: right;
+    text-decoration: none;
+    color: #ec5e57;
+}

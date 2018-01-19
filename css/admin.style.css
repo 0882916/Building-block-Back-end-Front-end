@@ -1,0 +1,129 @@
+/*CSS styling admin page*/
+.container {
+    width: 100%;
+}
+
+.table-name {
+    width: 700px;
+    margin: 30px auto 0 auto;
+}
+
+.session {
+    float: right;
+}
+
+.appointments {
+    height: 100%;
+    width: 696px;
+    margin: 0 auto;
+    border: 2px solid #537e7a;
+}
+
+.container > a {
+    color: #537e7a;
+}
+
+.icon {
+    align-self: right;
+}
+
+th {
+    text-align: left;
+}
+td.icon img {
+    float: right;
+}
+.small {
+    width: 25px;
+}
+.medium {
+    width: 100px;
+}
+.large {
+    width: 175px;
+}
+
+body {
+    margin: 8px;
+}
+
+p {
+    margin: 8px auto 0 auto;
+}
+
+.welcome {
+    width: 700px;
+    margin: 0 auto;
+    padding: 3.5px 0;
+}
+
+.table-name > a {
+    color: #537e7a;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #cef2ef;
+}
+
+p, #logout {
+    display: inline-block;
+}
+
+#logout {
+    float: right;
+    position: relative;
+}
+.unavailable-form {
+    height: 33px;
+    text-align: center;
+}
+.unavailable {
+    width: 696px;
+    margin: 0 auto;
+    height: 100%;
+    border: 2px solid #537e7a;
+}
+
+.table-two-name {
+    width: 700px;
+    margin: 50px auto 0 auto;
+}
+
+.table-two-name > a {
+    color: #537e7a;
+    font-weight: bold;
+    font-size: large;
+}
+.unavailable-container {
+    margin-top: 25.5px;
+    padding: 0 113.5px 25.5px 113.5px;
+    width: 469px;
+    border-bottom: 1px solid #537e7a;
+}
+span.errors {
+    color: #ec5e57;
+}
+table {
+    margin: 0 auto;
+}
+td.left {
+    width: 309px;
+    text-align: right;
+}
+td.right {
+    width: 185px;
+}
+td.right img {
+    float: right;
+}
+td.middle {
+    width: 190px;
+    text-align: center;
+}
+
+td, label, a, th, p, input {
+    font-family: Calibri, Arial, SansSerif;
+}

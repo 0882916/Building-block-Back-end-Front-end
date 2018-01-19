@@ -1,0 +1,23 @@
+p, h3 {
+    font-family: Calibri, Arial, SansSerif;
+}
+.confirm {
+    width: 700px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+.maps-title {
+    width: 700px;
+    margin: 15px auto 0 auto;
+}
+
+.google-maps {
+    width: 700px;
+    height: 500px;
+    margin: 60px auto 0 auto;
+    border: 1px solid #ec5e57;
+}
+.google-maps > img {
+    width: 700px;
+    height: 500px;
+}
