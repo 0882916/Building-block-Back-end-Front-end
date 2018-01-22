@@ -250,12 +250,14 @@ if (isset($_POST['submit'])) {
             <p>Nederland: 010 340 0705<br>
                 België: 02 588 7705<br>
                 Duitsland: 0531 2625 1950<br>
-                info@boconsushiconcepts.com</p>
+            </p>
         </div>
         <div class="info-right">
             <h4>Adres</h4>
             <p>Melbournestraat 76a<br>
-                3047 BJ Rotterdam</p>
+                3047 BJ Rotterdam
+                info@boconsushiconcepts.com
+            </p>
         </div>
     </div>
 </div>

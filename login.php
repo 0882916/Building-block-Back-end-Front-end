@@ -10,21 +10,21 @@ if (isset($_POST['submit'])) {
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $pass = mysqli_real_escape_string($db, $_POST['password']);
 
-    $query = "SELECT * FROM users WHERE user_name = '$username' AND user_pass = '$pass'";
-    password_verify('user_pass', PASSWORD_DEFAULT);
-
+    $query = "SELECT * FROM users WHERE user_name = '$username'";
     $result = mysqli_query($db, $query);
 
-    $user = mysqli_fetch_assoc($result);
+    if ($user = mysqli_fetch_assoc($result)) {
+        $dehash = password_verify("$pass", $user['user_pass']);
 
-    if ($user) {
-        $_SESSION['username'] = $username;
-        header('Location: admin.php');
-        mysqli_close($db);
+        if ($dehash) {
+            $_SESSION['username'] = $username;
+            header('Location: admin.php');
+            mysqli_close($db);
 
-    } else {
-        $errors['user'] = 'username invalid';
-        $errors['pass'] = 'password invalid';
+        } else {
+            $errors['user'] = 'username invalid';
+            $errors['pass'] = 'password invalid';
+        }
     }
 }
 ?>
