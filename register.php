@@ -1,30 +1,29 @@
 <?php
 session_start();
 
-//If user clicks confirm
+//password_hash($password, PASSWORD_DEFAULT);
+//password_verify($password, $user['password']);
+
 if (isset($_POST['submit'])) {
 
     require_once 'includes/database.php';
     require_once 'includes/login-validation.php';
 
     $username = mysqli_real_escape_string($db, $_POST['username']);
+
     $pass = mysqli_real_escape_string($db, $_POST['password']);
+    $passConfirm = mysqli_real_escape_string($db, $_POST['password-confirm']);
 
-    $query = "SELECT * FROM users WHERE user_name = '$username' AND user_pass = '$pass'";
-    password_verify('user_pass', PASSWORD_DEFAULT);
+    if ($pass == $passConfirm && !empty($pass)) {
+        $hash = password_hash("$pass", PASSWORD_DEFAULT);
 
-    $result = mysqli_query($db, $query);
+        $query = "INSERT INTO users(user_name, user_pass) VALUES ('$username', '$hash')";
 
-    $user = mysqli_fetch_assoc($result);
+        $result = mysqli_query($db, $query);
 
-    if ($user) {
-        $_SESSION['username'] = $username;
-        header('Location: admin.php');
-        mysqli_close($db);
-
-    } else {
-        $errors['user'] = 'username invalid';
-        $errors['pass'] = 'password invalid';
+        if ($result) {
+            header('Location: login.php');
+        }
     }
 }
 ?>
@@ -106,20 +105,29 @@ if (isset($_POST['submit'])) {
             <div class="data-field">
                 <label for="username"></label>
                 <input type="text" name="username"
-                       placeholder="<?= isset($errors['user']) ? $errors['user'] : 'username' ?>" value=""/>
+                       placeholder="<?= isset($errors['user']) ? $errors['user'] : 'username' ?>"
+                       value="<?= isset($username) ? $username : ''; ?>"/>
             </div>
 
             <div class="data-field">
                 <label for="password"></label>
                 <input type="password" name="password"
-                       placeholder="<?= isset($errors['pass']) ? $errors['pass'] : '********' ?>" value=""/>
+                       placeholder="<?= isset($errors['pass']) ? $errors['pass'] : 'password' ?>"
+                       value="<?= isset($pass) ? $pass : ''; ?>"/>
+            </div>
+
+
+            <div class="data-field">
+                <label for="password-confirm"></label>
+                <input type="password" name="password-confirm"
+                       placeholder="<?= isset($errors['identical']) ? $errors['identical'] : ' confirm password' ?>"
+                       value=""/>
             </div>
 
             <div class="data-submit">
                 <input type="submit" name="submit" value="login"/>
             </div>
         </form>
-        <a href="register.php">forgot password?</a>
     </div>
 </div>
 
