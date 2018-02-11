@@ -5,6 +5,7 @@ td, label, a, th, p, input {
     font-family: Calibri, Arial, SansSerif;
 }
 
+/*Styling body element*/
 body {
     margin: 8px;
 }
