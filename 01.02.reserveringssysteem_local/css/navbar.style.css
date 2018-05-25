@@ -1,0 +1,89 @@
+/*Body has some weird margin on the sides*/
+body {
+    margin: 0;
+}
+
+/*CSS styling for the navigation bar*/
+header {
+    height: 60px;
+    width: 700px;
+    margin: 8px auto 0 auto;
+}
+.logo > a > img {
+    width: 250px;
+    height: 25px;
+}
+
+.menu > .menu-item > li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+.menu > .menu-item > li > a {
+    text-decoration: none;
+    font-family: Calibri, Arial, SansSerif;
+    margin: 0 0 0 12px;
+}
+
+.language > ul > li {
+    display: inline-block;
+}
+
+.logo, .menu {
+    display: inline;
+}
+
+.language > ul {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+.menu > .menu-item > li > a:hover {
+    border-bottom: 3px solid #03bead;
+}
+
+.menu-item {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.menu {
+    padding-left: 30px;
+    float: right;
+    margin: 12px 0 0 0;
+}
+/*Bordeau border under nav*/
+.border {
+    width: 100%;
+    border-bottom: 2px solid #ec5e57;
+}
+
+/*CSS styling for the footer*/
+footer {
+    height: 30px;
+    width: 100%;
+    background: #9ae5de;
+    color: #537e7a;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*When screen size goes below 700 pixel width,
+CSS will adjust*/
+@media screen and (max-width: 700px) {
+    .language, .logo {
+        display: none;
+    }
+    .menu {
+        width: 415.91px;
+    }
+    header {
+        width: 415.91px;
+        margin: 8px auto 0 auto;
+    }
+}

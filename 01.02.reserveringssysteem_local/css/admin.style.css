@@ -1,0 +1,136 @@
+/*CSS styling admin page*/
+
+/*Declaring font-type*/
+td, label, a, th, p, input {
+    font-family: Calibri, Arial, SansSerif;
+}
+
+/*Styling body element*/
+body {
+    margin: 8px;
+}
+
+/*Sizing content window*/
+.container {
+    width: 100%;
+}
+.container > a {
+    color: #537e7a;
+}
+
+/*Placing and formatting Welcome message and logout-button/*/
+.welcome {
+    width: 700px;
+    margin: 0 auto;
+    padding: 3.5px 0;
+}
+p, #logout {
+    display: inline-block;
+}
+
+#logout {
+    float: right;
+    position: relative;
+}
+.session {
+     float: right;
+}
+
+
+/*Styling title of table-window*/
+.table-name {
+    width: 700px;
+    margin: 30px auto 0 auto;
+}
+.table-name > a {
+    color: #537e7a;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/*Sizing table-window for appointments-info*/
+.appointments {
+    height: 100%;
+    width: 696px;
+    margin: 0 auto;
+    border: 2px solid #537e7a;
+}
+.small {
+    width: 25px;
+}
+.medium {
+    width: 100px;
+}
+.large {
+    width: 175px;
+}
+
+
+/*Sizing table-window for unavailable dates*/
+.unavailable {
+    width: 696px;
+    margin: 0 auto;
+    height: 100%;
+    border: 2px solid #537e7a;
+}
+.unavailable-container {
+    margin-top: 25.5px;
+    padding: 0 113.5px 25.5px 113.5px;
+    width: 469px;
+    border-bottom: 1px solid #537e7a;
+}
+.unavailable-form {
+    height: 33px;
+    text-align: center;
+}
+
+
+/*Styling and formatting for tables*/
+table {
+    margin: 0 auto;
+}
+th {
+    text-align: left;
+}
+td.left {
+    width: 309px;
+    text-align: right;
+}
+td.middle {
+    width: 190px;
+    text-align: center;
+}
+td.right {
+    width: 185px;
+}
+td.right img {
+    float: right;
+}
+td.icon img {
+    float: right;
+}
+.icon {
+    align-self: right;
+}
+p {
+    margin: 8px auto 0 auto;
+}
+tbody tr:nth-child(odd) {
+    background-color: #cef2ef;
+}
+span.errors {
+    color: #ec5e57;
+}
+
+
+
+
+
+
+
+
+
+
+
+
